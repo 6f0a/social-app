@@ -1,0 +1,40 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+    {% if user.is_authenticated %}
+    <h1>All Posts</h1>
+    <form action="{% url 'index' %}" method='POST'>
+        {% csrf_token %}
+    <div class="smth">
+        <h3 id="one">Post Something</h3>
+        <input type="textarea" name="Posting" id="Posting" placeholder="Add new post"
+        required="True" maxlength="170">
+        <button class="btn btn-primary" type="submit">Add Post</button>
+    </div>
+    </form>
+{% endif %}
+
+{% for i in Posts %}
+<div class="comments" id="{{ i.id }}">
+    <a href="{% url 'profile' i.user %}" class="username">{{i.user}}</a>
+    <p class="comment-cont"id="comment-cont-{{ i.id }}">{{i.posts}}</p>
+    <p class="date">{{i.date}}</p>
+    {% if request.user == i.user %}
+    <a href="#" class='edit'>edit</a>
+    {% endif %}
+    {% if request.user in i.like.all %}
+    <h1 class='like' id='like1-{{i.id}}'>&#9829;</h1>
+    {% else %}
+    <h1 class='like' id='like-{{i.id}}'>&#9825;</h1>
+    {% endif %}
+    <h2 class='counter' id='count-{{i.id}}'>{{i.like.count}}</h2>
+</div>
+<div class="comments1" id="comments1-{{ i.id }}">
+    <p2 class="username1" data-user="{{i.user}}">{{i.user}}</p2>
+    <p class="date1">{{i.date}}</p>
+    <textarea class="comment-cont1" id="comment-cont1-{{i.id}}">{{i.posts}}</textarea>
+    <button class='submit' id="submit-{{ i.id }}">Save Changes</button>
+</div>
+{% endfor %}
+{% include "network/paginator.html" %}
+{% endblock %}

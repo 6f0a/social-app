@@ -1,0 +1,34 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+    <h1>Following</h1>
+
+{% if Following.count == 0 %}
+    <h1>You are not following anybody just yet!</h1>
+{% else %}
+
+{% for i in Posts %}
+<div class="comments" id="{{ i.id }}">
+    <a href="{% url 'profile' i.user %}" class="username">{{i.user}}</a>
+    <p class="comment-cont" id="comment-cont-{{ i.id }}">{{i.posts}}</p>
+    <p class="date">{{i.date}}</p>
+    {% if request.user == Username %}
+    <a class='edit'>edit</a>
+    {% endif %}
+    {% if request.user in i.like.all %}
+    <h1 class='like' id='like1-{{i.id}}'>&#9829;</h1>
+    {% else %}
+    <h1 class='like' id='like-{{i.id}}'>&#9825;</h1>
+    {% endif %}
+    <h2 class='counter' id='count-{{i.id}}'>{{i.like.count}}</h2>
+</div>
+<div class="comments1" id="comments1-{{ i.id }}">
+    <p2 class="username1" data-user="{{i.user}}">{{i.user}}</p2>
+    <p class="date1">{{i.date}}</p>
+    <textarea class="comment-cont1"  id="comment-cont1-{{i.id}}">{{i.posts}}</textarea>
+    <button class='submit' id="submit-{{ i.id }}">Save changes</button>
+</div>
+{% endfor %}
+{% endif %}
+{% include "network/paginator.html" %}
+{% endblock %}

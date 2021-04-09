@@ -1,0 +1,128 @@
+.comments{
+    border-radius: 10cm;
+    border-style: solid;
+    border-width: thin;
+    border-color:gainsboro;
+    width: 95%;
+    height: 5cm;
+    margin-left: 2%;
+    margin: 2%;
+}
+.comment-cont{
+    word-wrap: break-word;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+.username{
+    word-wrap: break-word;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-size: 25px;
+    color: black;
+}
+.smth{
+    border-style:solid;
+    border-width: thin;
+    border-color: gainsboro;
+    width: 95%;
+    height: 5cm;
+    margin-left: 2%;
+}
+#Posting{
+    width: 10cm;
+    height: 2cm;
+    width: 96%;
+    margin-left: 2%;
+}
+.btn{
+    margin-left: 2%;
+    margin-top:0.5%
+}
+#one{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+.date{
+    word-wrap: break-word;
+    margin-top: 1%;
+    margin-left: 5%;
+    color: gray;
+
+}
+.follow{
+    border-style:solid;
+    border-width: thin;
+    border-color: gainsboro;
+    width:3cm;
+    height: auto;
+}
+.follow1{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.edit{
+    word-wrap: break-word;
+    margin-top: 1%;
+    margin-left: 5%;
+    color: gray;
+}
+#div1{
+    border-radius: 10cm;
+    border-style: solid;
+    border-width: thin;
+    border-color:gainsboro;
+    width: 95%;
+    height: 5cm;
+    margin-left: 2%;
+    margin: 2%;
+}
+.comments1{
+    border-radius: 10cm;
+    border-style: solid;
+    border-width: thin;
+    border-color:gainsboro;
+    width: 95%;
+    height: 5cm;
+    margin-left: 2%;
+    margin: 2%;
+}
+.comment-cont1{
+    word-wrap: break-word;
+    margin-top: 0.5%;
+    margin-left: 5%;
+    width:60%;
+    border-style: solid;
+    border-width: thin;
+    border-color:gainsboro;
+    resize:none;
+}
+.username1{
+    word-wrap: break-word;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-size: 25px;
+}
+.date1{
+    word-wrap: break-word;
+    margin-top: 1%;
+    margin-left: 5%;
+    color: gray;
+}
+.submit{
+    word-wrap: break-word;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+.like{
+    margin-top:-2%;
+    margin-left:90%;
+}
+.counter{
+    margin-top:-2.7%;
+    margin-left:92%;
+}
+.like1{
+    margin-top:-2%;
+    margin-left:90%;
+}
+
