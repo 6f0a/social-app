@@ -7,6 +7,10 @@
     height: 5cm;
     margin-left: 2%;
     margin: 2%;
+    
+}
+.comments:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .comment-cont{
     word-wrap: break-word;
@@ -55,6 +59,7 @@
     border-color: gainsboro;
     width:3cm;
     height: auto;
+    margin-left: 2.5rem;
 }
 .follow1{
     font-size: medium;
@@ -125,4 +130,6 @@
     margin-top:-2%;
     margin-left:90%;
 }
-
+.title{
+    margin-left: 2.5rem;
+}
