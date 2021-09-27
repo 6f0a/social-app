@@ -15,6 +15,7 @@ pip install -r requirements.txt
 3. Run development server:
 ```
 python manage.py runserver
+```
 
 <h2>Visual Demo</h2>
 https://www.youtube.com/watch?v=2Mgi0nNV32E
